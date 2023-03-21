@@ -80,13 +80,18 @@ class _ContactScreenState extends State<ContactScreen> {
                                 builder: (BuildContext context) {
                                   return AlertDialog(
                                     title: const Text('ลบข้อมูล'),
-                                    content: Row(
+                                    content: Column(
+                                      mainAxisSize: MainAxisSize.min,
                                       children: [
-                                        const Text('คุณต้องการจะลบข้อมูล '),
-                                        Text(
-                                          '${_contactItems[index].contactFirstName} ${_contactItems[index].contactLastName}',
-                                          style: const TextStyle(
-                                              fontWeight: FontWeight.bold),
+                                        Row(
+                                          children: [
+                                            const Text('คุณต้องการจะลบข้อมูล '),
+                                            Text(
+                                              '${_contactItems[index].contactFirstName} ${_contactItems[index].contactLastName}',
+                                              style: const TextStyle(
+                                                  fontWeight: FontWeight.bold),
+                                            ),
+                                          ],
                                         ),
                                         const Text(' ใช่หรือไม่?'),
                                       ],

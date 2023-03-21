@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:yumyum_flutter/bottom_menu.dart';
 import 'package:yumyum_flutter/contact-detail.screen.dart';
-
 import 'bottom_menu.provider.dart';
 import 'calculate-triangle.screen.dart';
 
